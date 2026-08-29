@@ -888,6 +888,228 @@
       .header-call-strip a{font-size:16px}
     }
 
+
+    /* delivery map */
+    .delivery-map-section{
+      padding:88px 0;
+      background:linear-gradient(180deg,#f4f0e5 0%,#ffffff 100%);
+    }
+    .delivery-map-section h2{
+      max-width:860px;
+      margin-bottom:16px;
+    }
+    .map-lead{
+      max-width:900px;
+      margin-bottom:30px;
+    }
+    .delivery-map-grid{
+      display:grid;
+      grid-template-columns:minmax(0, .88fr) minmax(0, 1.12fr);
+      gap:28px;
+      align-items:stretch;
+    }
+    .route-card,.map-card{
+      background:#fff;
+      border:1px solid #d9e1e5;
+      border-radius:24px;
+      box-shadow:0 16px 38px rgba(10,35,52,.09);
+      overflow:hidden;
+    }
+    .route-card{
+      padding:26px;
+    }
+    .route-card h3,.map-card h3{
+      margin:0 0 7px;
+      color:#0b263b;
+    }
+    .route-card .sub{
+      color:#60727d;
+      font-size:13px;
+      line-height:1.55;
+      margin-bottom:22px;
+    }
+    .origin-box{
+      border:1px solid #c9d6dc;
+      background:#f7fafb;
+      border-radius:16px;
+      padding:14px 15px;
+      margin-bottom:16px;
+    }
+    .origin-box small{
+      display:block;
+      color:#71828b;
+      font-size:10px;
+      font-weight:900;
+      letter-spacing:.09em;
+      text-transform:uppercase;
+      margin-bottom:4px;
+    }
+    .origin-box strong{
+      display:block;
+      color:#153e56;
+      font-size:14px;
+    }
+    .route-field{
+      margin-bottom:15px;
+    }
+    .route-field label{
+      display:block;
+      font-size:12px;
+      font-weight:900;
+      color:#173a50;
+      margin-bottom:7px;
+    }
+    .route-field select,.route-field input{
+      width:100%;
+      min-height:48px;
+      border:1px solid #b9cbd3;
+      border-radius:12px;
+      padding:10px 12px;
+      background:#fff;
+      color:#183849;
+      font:inherit;
+      font-size:14px;
+    }
+    .route-divider{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      color:#87969d;
+      font-size:11px;
+      font-weight:900;
+      letter-spacing:.08em;
+      margin:14px 0;
+    }
+    .route-divider:before,.route-divider:after{
+      content:"";
+      height:1px;
+      background:#d8e0e4;
+      flex:1;
+    }
+    .route-actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:18px;
+    }
+    .route-actions .btn{
+      flex:1 1 190px;
+      min-height:48px;
+    }
+    .route-actions .btn-outline{
+      border:2px solid #153e56;
+      color:#153e56;
+      background:#fff;
+    }
+    .route-actions .btn-outline:hover{
+      background:#edf3f6;
+      color:#0b263b;
+    }
+    .route-stats{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+      margin-top:18px;
+    }
+    .route-stat{
+      border-radius:15px;
+      background:#0b263b;
+      color:#fff;
+      padding:15px;
+      min-height:88px;
+    }
+    .route-stat.alt{
+      background:#12805a;
+    }
+    .route-stat span{
+      display:block;
+      color:#c8d7dd;
+      font-size:10px;
+      font-weight:900;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      margin-bottom:6px;
+    }
+    .route-stat.alt span{color:#d7eee7}
+    .route-stat strong{
+      display:block;
+      font-size:22px;
+      line-height:1.05;
+    }
+    .route-note{
+      margin-top:14px;
+      color:#667983;
+      font-size:11px;
+      line-height:1.55;
+    }
+    .map-card{
+      display:flex;
+      flex-direction:column;
+      min-height:620px;
+    }
+    .map-card-head{
+      padding:20px 22px 13px;
+      border-bottom:1px solid #dbe3e7;
+    }
+    .map-card-head p{
+      margin:3px 0 0;
+      color:#687b85;
+      font-size:12px;
+    }
+    .google-map-frame{
+      width:100%;
+      flex:1;
+      min-height:500px;
+      border:0;
+      background:#e6ecef;
+    }
+    .service-cities{
+      margin-top:26px;
+      padding:20px 22px;
+      border-radius:20px;
+      background:#0b263b;
+      color:#fff;
+    }
+    .service-cities strong{
+      display:block;
+      margin-bottom:10px;
+      font-size:14px;
+    }
+    .city-chip-wrap{
+      display:flex;
+      flex-wrap:wrap;
+      gap:7px;
+    }
+    .city-chip{
+      display:inline-block;
+      padding:6px 9px;
+      border-radius:999px;
+      background:rgba(255,255,255,.10);
+      border:1px solid rgba(255,255,255,.15);
+      color:#eaf1f4;
+      font-size:10px;
+      font-weight:800;
+    }
+    .route-error{
+      color:#a74423;
+      font-weight:800;
+      font-size:12px;
+      min-height:18px;
+      margin-top:8px;
+    }
+    @media(max-width:900px){
+      .delivery-map-grid{grid-template-columns:1fr}
+      .map-card{min-height:520px}
+      .google-map-frame{min-height:420px}
+    }
+    @media(max-width:560px){
+      .delivery-map-section{padding:62px 0}
+      .route-card{padding:18px}
+      .route-stats{grid-template-columns:1fr}
+      .map-card{min-height:470px}
+      .google-map-frame{min-height:360px}
+    }
+
   </style>
 </head>
 
@@ -923,6 +1145,7 @@
           <a href="#blue-rock"><span data-lang="en">Blue Rock</span><span data-lang="es">Piedra Azul</span></a>
           <a href="#operation"><span data-lang="en">Operation</span><span data-lang="es">Operación</span></a>
           <a href="#calculator"><span data-lang="en">Calculator</span><span data-lang="es">Calculadora</span></a>
+          <a href="#delivery-map"><span data-lang="en">Delivery Map</span><span data-lang="es">Mapa Entregas</span></a>
           <a href="#standards"><span data-lang="en">ASTM</span><span data-lang="es">ASTM</span></a>
           <a href="#yard"><span data-lang="en">Progreso Yard</span><span data-lang="es">Patio Progreso</span></a>
           <a href="#contact"><span data-lang="en">Contact</span><span data-lang="es">Contacto</span></a>
@@ -1234,6 +1457,179 @@
       </div>
     </section>
 
+
+
+    <section class="delivery-map-section" id="delivery-map">
+      <div class="container">
+        <div class="kicker" data-lang="en">DELIVERY DISTANCE & GOOGLE MAPS</div>
+        <div class="kicker" data-lang="es">DISTANCIA DE ENTREGA Y GOOGLE MAPS</div>
+
+        <h2 data-lang="en">From the Progreso yard to your job site.</h2>
+        <h2 data-lang="es">Desde el patio de Progreso hasta su obra.</h2>
+
+        <p class="lead map-lead" data-lang="en">
+          Select a Rio Grande Valley city or enter a specific job-site address. The calculator shows an approximate direct distance from Progreso, while Google Maps opens the current driving route, road mileage and travel time.
+        </p>
+        <p class="lead map-lead" data-lang="es">
+          Seleccione una ciudad del Valle del Río Grande o ingrese la dirección específica de la obra. La calculadora muestra una distancia directa aproximada desde Progreso, mientras Google Maps abre la ruta actual, millas por carretera y tiempo de viaje.
+        </p>
+
+        <div class="delivery-map-grid">
+          <div class="route-card">
+            <h3 data-lang="en">Delivery Distance Calculator</h3>
+            <h3 data-lang="es">Calculadora de Distancia de Entrega</h3>
+            <p class="sub" data-lang="en">Built for contractors, estimators and purchasing teams planning delivered blue rock.</p>
+            <p class="sub" data-lang="es">Diseñada para contratistas, estimadores y compradores que planean entregas de piedra azul.</p>
+
+            <div class="origin-box">
+              <small data-lang="en">Fixed Origin — Martínez Progreso Yard</small>
+              <small data-lang="es">Origen Fijo — Patio Martínez en Progreso</small>
+              <strong>607 Old Cemetry Rd, Progreso, TX 78579</strong>
+            </div>
+
+            <div class="route-field">
+              <label for="deliveryCity">
+                <span data-lang="en">Select destination city / town</span>
+                <span data-lang="es">Seleccione ciudad / población de destino</span>
+              </label>
+              <select id="deliveryCity">
+                <optgroup label="Mid-Valley / Centro del Valle">
+                  <option value="Progreso">Progreso, TX</option>
+                  <option value="Progreso Lakes">Progreso Lakes, TX</option>
+                  <option value="Weslaco">Weslaco, TX</option>
+                  <option value="Donna">Donna, TX</option>
+                  <option value="Mercedes">Mercedes, TX</option>
+                  <option value="La Feria">La Feria, TX</option>
+                </optgroup>
+                <optgroup label="Upper Valley / Alto Valle">
+                  <option value="Alamo">Alamo, TX</option>
+                  <option value="San Juan">San Juan, TX</option>
+                  <option value="Pharr">Pharr, TX</option>
+                  <option value="Hidalgo">Hidalgo, TX</option>
+                  <option value="McAllen" selected>McAllen, TX</option>
+                  <option value="Edinburg">Edinburg, TX</option>
+                  <option value="Mission">Mission, TX</option>
+                  <option value="Palmhurst">Palmhurst, TX</option>
+                  <option value="Alton">Alton, TX</option>
+                  <option value="Palmview">Palmview, TX</option>
+                  <option value="Penitas">Peñitas, TX</option>
+                  <option value="La Joya">La Joya, TX</option>
+                  <option value="Sullivan City">Sullivan City, TX</option>
+                </optgroup>
+                <optgroup label="Delta / North RGV / Norte">
+                  <option value="La Villa">La Villa, TX</option>
+                  <option value="Edcouch">Edcouch, TX</option>
+                  <option value="Elsa">Elsa, TX</option>
+                  <option value="Monte Alto">Monte Alto, TX</option>
+                  <option value="Santa Rosa">Santa Rosa, TX</option>
+                  <option value="Palm Valley">Palm Valley, TX</option>
+                  <option value="Primera">Primera, TX</option>
+                  <option value="Combes">Combes, TX</option>
+                  <option value="Sebastian">Sebastian, TX</option>
+                  <option value="Lyford">Lyford, TX</option>
+                  <option value="Raymondville">Raymondville, TX</option>
+                  <option value="San Manuel">San Manuel (Linn), TX</option>
+                </optgroup>
+                <optgroup label="Cameron / Coastal / Costa">
+                  <option value="Harlingen">Harlingen, TX</option>
+                  <option value="Rio Hondo">Rio Hondo, TX</option>
+                  <option value="San Benito">San Benito, TX</option>
+                  <option value="Los Fresnos">Los Fresnos, TX</option>
+                  <option value="Brownsville">Brownsville, TX</option>
+                  <option value="Port Mansfield">Port Mansfield, TX</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="route-divider">
+              <span data-lang="en">OR ENTER A JOB SITE</span>
+              <span data-lang="es">O INGRESE UNA OBRA</span>
+            </div>
+
+            <div class="route-field">
+              <label for="customJobSite">
+                <span data-lang="en">Specific job-site address (optional)</span>
+                <span data-lang="es">Dirección específica de la obra (opcional)</span>
+              </label>
+              <input id="customJobSite" type="text"
+                placeholder="Example: Port of Brownsville, Brownsville, TX">
+            </div>
+
+            <div id="routeError" class="route-error"></div>
+
+            <div class="route-actions">
+              <button id="showDeliveryRoute" type="button" class="btn btn-primary">
+                <span data-lang="en">Calculate / Show Map</span>
+                <span data-lang="es">Calcular / Mostrar Mapa</span>
+              </button>
+              <a id="googleRouteLink" class="btn btn-outline" target="_blank" rel="noopener">
+                <span data-lang="en">Google Maps Driving Route ↗</span>
+                <span data-lang="es">Ruta de Manejo en Google Maps ↗</span>
+              </a>
+            </div>
+
+            <div class="route-stats">
+              <div class="route-stat">
+                <span data-lang="en">Approx. Direct Distance</span>
+                <span data-lang="es">Distancia Directa Aprox.</span>
+                <strong id="directMiles">—</strong>
+              </div>
+              <div class="route-stat alt">
+                <span data-lang="en">Kilometers</span>
+                <span data-lang="es">Kilómetros</span>
+                <strong id="directKm">—</strong>
+              </div>
+            </div>
+
+            <div id="routeSummary" class="route-note"></div>
+
+            <div class="route-note">
+              <span data-lang="en">
+                The on-page figure is a planning estimate measured from Progreso to the selected city center. Road miles can be longer. Use the Google Maps button for the live driving distance, route and travel time before quoting freight.
+              </span>
+              <span data-lang="es">
+                La cifra en esta página es una estimación de planificación medida desde Progreso al centro de la ciudad seleccionada. Las millas por carretera pueden ser mayores. Use el botón de Google Maps para la distancia real de manejo, ruta y tiempo antes de cotizar el flete.
+              </span>
+            </div>
+          </div>
+
+          <div class="map-card">
+            <div class="map-card-head">
+              <h3 data-lang="en">Google Maps Destination Preview</h3>
+              <h3 data-lang="es">Vista del Destino en Google Maps</h3>
+              <p data-lang="en">Select a destination, then open the driving route for current road mileage.</p>
+              <p data-lang="es">Seleccione un destino y abra la ruta de manejo para ver las millas actuales por carretera.</p>
+            </div>
+            <iframe
+              id="deliveryMapFrame"
+              class="google-map-frame"
+              title="Google Maps delivery destination"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=McAllen%2C%20TX&z=11&output=embed">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="service-cities">
+          <strong data-lang="en">RGV destinations included in the calculator</strong>
+          <strong data-lang="es">Destinos del Valle incluidos en la calculadora</strong>
+          <div class="city-chip-wrap">
+            <span class="city-chip">La Joya</span><span class="city-chip">Peñitas</span><span class="city-chip">Palmview</span>
+            <span class="city-chip">Mission</span><span class="city-chip">McAllen</span><span class="city-chip">Hidalgo</span>
+            <span class="city-chip">Pharr</span><span class="city-chip">San Juan</span><span class="city-chip">Alamo</span>
+            <span class="city-chip">Donna</span><span class="city-chip">Weslaco</span><span class="city-chip">Progreso</span>
+            <span class="city-chip">Mercedes</span><span class="city-chip">La Feria</span><span class="city-chip">Harlingen</span>
+            <span class="city-chip">San Benito</span><span class="city-chip">Los Fresnos</span><span class="city-chip">Brownsville</span>
+            <span class="city-chip">Edinburg</span><span class="city-chip">Elsa</span><span class="city-chip">Edcouch</span>
+            <span class="city-chip">La Villa</span><span class="city-chip">Monte Alto</span><span class="city-chip">Santa Rosa</span>
+            <span class="city-chip">Primera</span><span class="city-chip">Combes</span><span class="city-chip">Rio Hondo</span>
+            <span class="city-chip">Sebastian</span><span class="city-chip">Lyford</span><span class="city-chip">Raymondville</span>
+            <span class="city-chip">San Manuel / Linn</span><span class="city-chip">Port Mansfield</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="standards-section" id="standards">
       <div class="container">
@@ -1738,6 +2134,7 @@
             <a href="#blue-rock"><span data-lang="en">Blue Rock</span><span data-lang="es">Piedra Azul</span></a>
             <a href="#operation"><span data-lang="en">Operation</span><span data-lang="es">Operación</span></a>
             <a href="#calculator"><span data-lang="en">Calculator</span><span data-lang="es">Calculadora</span></a>
+            <a href="#delivery-map"><span data-lang="en">Delivery Map</span><span data-lang="es">Mapa de Entregas</span></a>
           <a href="#standards"><span data-lang="en">ASTM</span><span data-lang="es">ASTM</span></a>
           <a href="#yard"><span data-lang="en">Progreso Yard</span><span data-lang="es">Patio Progreso</span></a>
             <a href="#contact"><span data-lang="en">Quote</span><span data-lang="es">Cotización</span></a>
@@ -1785,6 +2182,7 @@
       } catch (e) {}
 
       if (document.getElementById("materialCalculator")) calculateMaterial(false);
+      if (document.getElementById("deliveryCity")) updateDeliveryMap(false);
     }
 
     document.querySelectorAll("[data-set-lang]").forEach(btn => {
@@ -1883,6 +2281,156 @@ Details / Detalles: ${notes || "-"}`;
       document.getElementById("calcError").textContent = "";
       calculateMaterial(false);
     });
+
+
+
+    const deliveryOrigin = {
+      label: "Martínez Progreso Yard",
+      address: "607 Old Cemetry Rd, Progreso, TX 78579",
+      lat: 26.096140,
+      lng: -97.956592
+    };
+
+    const deliveryCities = {
+      "Progreso": {label:"Progreso, TX", lat:26.096140, lng:-97.956592},
+      "Progreso Lakes": {label:"Progreso Lakes, TX", lat:26.068976, lng:-97.960665},
+      "Weslaco": {label:"Weslaco, TX", lat:26.160549, lng:-97.987654},
+      "Donna": {label:"Donna, TX", lat:26.161050, lng:-98.038929},
+      "Mercedes": {label:"Mercedes, TX", lat:26.153818, lng:-97.912907},
+      "La Feria": {label:"La Feria, TX", lat:26.155307, lng:-97.825027},
+
+      "Alamo": {label:"Alamo, TX", lat:26.181037, lng:-98.117449},
+      "San Juan": {label:"San Juan, TX", lat:26.189414, lng:-98.151817},
+      "Pharr": {label:"Pharr, TX", lat:26.163436, lng:-98.193890},
+      "Hidalgo": {label:"Hidalgo, TX", lat:26.108943, lng:-98.246160},
+      "McAllen": {label:"McAllen, TX", lat:26.224966, lng:-98.246083},
+      "Edinburg": {label:"Edinburg, TX", lat:26.318374, lng:-98.153480},
+      "Mission": {label:"Mission, TX", lat:26.204060, lng:-98.325221},
+      "Palmhurst": {label:"Palmhurst, TX", lat:26.258263, lng:-98.295317},
+      "Alton": {label:"Alton, TX", lat:26.288775, lng:-98.310581},
+      "Palmview": {label:"Palmview, TX", lat:26.231926, lng:-98.381638},
+      "Penitas": {label:"Peñitas, TX", lat:26.258315, lng:-98.438645},
+      "La Joya": {label:"La Joya, TX", lat:26.258634, lng:-98.474620},
+      "Sullivan City": {label:"Sullivan City, TX", lat:26.275217, lng:-98.564441},
+
+      "La Villa": {label:"La Villa, TX", lat:26.296308, lng:-97.926912},
+      "Edcouch": {label:"Edcouch, TX", lat:26.293723, lng:-97.963091},
+      "Elsa": {label:"Elsa, TX", lat:26.297814, lng:-97.993562},
+      "Monte Alto": {label:"Monte Alto, TX", lat:26.374373, lng:-97.972724},
+      "Santa Rosa": {label:"Santa Rosa, TX", lat:26.256054, lng:-97.825255},
+      "Palm Valley": {label:"Palm Valley, TX", lat:26.204445, lng:-97.754319},
+      "Primera": {label:"Primera, TX", lat:26.223216, lng:-97.751692},
+      "Combes": {label:"Combes, TX", lat:26.246514, lng:-97.726766},
+      "Sebastian": {label:"Sebastian, TX", lat:26.342850, lng:-97.790270},
+      "Lyford": {label:"Lyford, TX", lat:26.414695, lng:-97.789554},
+      "Raymondville": {label:"Raymondville, TX", lat:26.475708, lng:-97.777744},
+      "San Manuel": {label:"San Manuel (Linn), TX", lat:26.564507, lng:-98.121119},
+
+      "Harlingen": {label:"Harlingen, TX", lat:26.191204, lng:-97.697383},
+      "Rio Hondo": {label:"Rio Hondo, TX", lat:26.234627, lng:-97.581466},
+      "San Benito": {label:"San Benito, TX", lat:26.129398, lng:-97.644050},
+      "Los Fresnos": {label:"Los Fresnos, TX", lat:26.074062, lng:-97.488017},
+      "Brownsville": {label:"Brownsville, TX", lat:25.989404, lng:-97.480625},
+      "Port Mansfield": {label:"Port Mansfield, TX", lat:26.555453, lng:-97.431051}
+    };
+
+    function haversineMiles(lat1, lon1, lat2, lon2) {
+      const toRad = deg => deg * Math.PI / 180;
+      const R = 3958.7613;
+      const dLat = toRad(lat2 - lat1);
+      const dLon = toRad(lon2 - lon1);
+      const a =
+        Math.sin(dLat / 2) ** 2 +
+        Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+        Math.sin(dLon / 2) ** 2;
+      return 2 * R * Math.asin(Math.sqrt(a));
+    }
+
+    function updateDeliveryMap(showValidation = false) {
+      const citySelect = document.getElementById("deliveryCity");
+      const customInput = document.getElementById("customJobSite");
+      const error = document.getElementById("routeError");
+      const frame = document.getElementById("deliveryMapFrame");
+      const googleLink = document.getElementById("googleRouteLink");
+      const milesEl = document.getElementById("directMiles");
+      const kmEl = document.getElementById("directKm");
+      const summary = document.getElementById("routeSummary");
+
+      if (!citySelect || !customInput || !frame || !googleLink) return;
+
+      const custom = customInput.value.trim();
+      const city = deliveryCities[citySelect.value];
+      const destination = custom || (city ? city.label : "");
+
+      if (!destination) {
+        if (showValidation) {
+          error.textContent = currentLang === "es"
+            ? "Seleccione una ciudad o ingrese la dirección de la obra."
+            : "Select a city or enter the job-site address.";
+        }
+        return;
+      }
+
+      error.textContent = "";
+
+      const routeUrl =
+        "https://www.google.com/maps/dir/?api=1&origin=" +
+        encodeURIComponent(deliveryOrigin.address) +
+        "&destination=" + encodeURIComponent(destination) +
+        "&travelmode=driving";
+
+      googleLink.href = routeUrl;
+
+      if (custom) {
+        milesEl.textContent = currentLang === "es" ? "Ver Google Maps" : "See Google Maps";
+        kmEl.textContent = "—";
+        summary.textContent = currentLang === "es"
+          ? `Obra seleccionada: ${destination}. Abra Google Maps para millas reales por carretera y tiempo de viaje.`
+          : `Selected job site: ${destination}. Open Google Maps for actual road miles and travel time.`;
+        frame.src = "https://www.google.com/maps?q=" + encodeURIComponent(destination) + "&z=11&output=embed";
+      } else if (city) {
+        const miles = haversineMiles(
+          deliveryOrigin.lat, deliveryOrigin.lng,
+          city.lat, city.lng
+        );
+        const km = miles * 1.609344;
+
+        milesEl.textContent = miles.toFixed(1) + " mi";
+        kmEl.textContent = km.toFixed(1) + " km";
+        summary.textContent = currentLang === "es"
+          ? `${city.label}: aproximadamente ${miles.toFixed(1)} millas (${km.toFixed(1)} km) en línea directa desde Progreso. La distancia de manejo puede ser mayor.`
+          : `${city.label}: approximately ${miles.toFixed(1)} miles (${km.toFixed(1)} km) direct from Progreso. Driving distance may be longer.`;
+
+        frame.src =
+          "https://www.google.com/maps?q=" +
+          encodeURIComponent(city.label) +
+          "&z=11&output=embed";
+      }
+    }
+
+    const deliveryCitySelect = document.getElementById("deliveryCity");
+    const customJobSiteInput = document.getElementById("customJobSite");
+    const showDeliveryRoute = document.getElementById("showDeliveryRoute");
+
+    if (deliveryCitySelect) {
+      deliveryCitySelect.addEventListener("change", () => {
+        customJobSiteInput.value = "";
+        updateDeliveryMap(false);
+      });
+    }
+
+    if (showDeliveryRoute) {
+      showDeliveryRoute.addEventListener("click", () => updateDeliveryMap(true));
+    }
+
+    if (customJobSiteInput) {
+      customJobSiteInput.addEventListener("keydown", e => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          updateDeliveryMap(true);
+        }
+      });
+    }
 
 
     document.getElementById("year").textContent = new Date().getFullYear();
